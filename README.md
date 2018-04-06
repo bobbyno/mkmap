@@ -1,13 +1,14 @@
 # mkmap
 ## Make a new `maptime` wiki-map
 
-_This will eventually become a command-line utility. For now, it's a bare bones set of shell commands._
+_This will eventually become a command-line utility. For now, it's a bare-bones set of shell commands acting as a template for new `maptime` instances._
 
 ## Getting Started
 
 ```
-git clone <git url>
-cd mynewmap
+# Clone this template to create a new wiki
+git clone https://github.com/bobbyno/mkmap.git hellomap
+cd hellomap
 
 # Start a maptime container
 make run
@@ -27,6 +28,8 @@ git init .
 git add .
 git commit -am "Initial import"
 ```
+
+At this point you're ready to push to a shared server. You can use your wiki as a personal knowledge base, or easily share it with others who can clone your repo. Assuming they also have Docker, they're a `make run open` away from becoming editors.
 
 ## Docker Quickstart
 
